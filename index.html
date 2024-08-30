@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <!-- <link rel="apple-touch-icon" href="./img/icon.png"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="style.css">
+<title>🪷English - Pali Dictionary</title>
+</head>
+<body>
+  <h2>🪷English - Pali Dictionary</h2>
+  <p style="font-size: 10px;">Dictionary database from <a href="https://www.budsas.org/ebud/dict-ep/index.htm">English-Pali Dictionary by Metta Net, Sri Lanka</a></p>
+<div class="sticky">
+<input type="text" id="searchInput" placeholder="ค้นหาคำศัพท์..." oninput="liveSearch()" onfocus="liveSearch()">
+<br>
+<button onclick="unicode(this.innerHTML)">ā</button>
+<button onclick="unicode(this.innerHTML)">ī</button>
+<button onclick="unicode(this.innerHTML)">ū</button>
+<button onclick="unicode(this.innerHTML)">ṅ</button>
+<button onclick="unicode(this.innerHTML)">ñ</button>
+<button onclick="unicode(this.innerHTML)">ṭ</button>
+<button onclick="unicode(this.innerHTML)">ḍ</button>
+<button onclick="unicode(this.innerHTML)">ṇ</button>
+<button onclick="unicode(this.innerHTML)">ṃ</button>
+<button onclick="unicode(this.innerHTML)">ḷ</button>
+<div id="liveSearch"></div>
+<div id="countWordResult"></div>
+</div> 
+
+<div id="searchResult"></div>
+
+<script src="dict.js" charset="utf-8"></script>
+<script src="app.js" charset="utf-8"></script>
+</body>
+</html>
